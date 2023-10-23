@@ -1,5 +1,14 @@
 <div class="relative">
-    <button class="px-4 py-2">
-        {{ $text }}
-    </button>
+    <livewire:button 
+        :bg-color="$btnBgColor"
+        :text-color="$btnTextColor"
+        :id="$btnId"
+        :text="$btnText"/>
+    <div class="">
+        @if(isset($slot))
+            {{ $slot }}
+        @else
+            <p>Default content</p>
+        @endif
+    </div>
 </div>

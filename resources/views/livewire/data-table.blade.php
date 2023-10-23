@@ -173,7 +173,12 @@
             </div>
         </div>
     </div>
-    <livewire:toy
-        camel-text="My own text"
-        event='die-screen'/>
+    <livewire:show-content
+        btn-bg-color='bg-blue-500'
+        btn-text-color='text-white'
+        btn-id='die-screen'
+        btn-text='Hellow world'
+        bg-color='bg-white'>
+        <p>Hola mundo</p>
+    </livewire::show-content>
 </section>

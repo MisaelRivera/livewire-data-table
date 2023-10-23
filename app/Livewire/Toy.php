@@ -10,7 +10,7 @@ class Toy extends Component
     public $event;
 
     public function clickHandler ($eventName) {
-        dispatch($eventName);
+        $this->dispatch($eventName);
     }
     public function render()
     {
